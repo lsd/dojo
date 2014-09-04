@@ -1,0 +1,10 @@
+{
+  "name": "imagineeasy-dojo",
+  "version": "0.0.1",
+  "dependencies": {
+    "jasmine-node": "~1.14.5"
+  },
+  "devDependencies": {},
+  "author": "yitznewton@hotmail.com",
+  "license": "BSD-2-Clause"
+}
