@@ -1,0 +1,27 @@
+{
+    "name": "easybiblabs/dojo",
+    "description": "A basic setup for Coding Dojo in PHP",
+    "type": "application",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Yitzchak Schaffer",
+            "email": "yitzchak@yitznewton.org"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Yitznewton\\TwentyFortyEight\\": "src/"
+        }
+    },
+    "require": {
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "phpmd/phpmd": "~2.0",
+        "squizlabs/php_codesniffer": "*",
+        "fabpot/php-cs-fixer": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
