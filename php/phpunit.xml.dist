@@ -11,7 +11,7 @@
         >
     <testsuites>
         <testsuite>
-            <directory>./src/Yitznewton/Dojo/Tests</directory>
+            <directory>./src/Yitznewton/Dojo</directory>
         </testsuite>
     </testsuites>
 

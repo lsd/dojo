@@ -11,8 +11,7 @@
     ],
     "autoload": {
         "psr-0": {
-            "Yitznewton\\Dojo\\": "src/",
-            "Yitznewton\\Dojo\\Tests": "src/Yitznewton/Dojo/Tests"
+            "Yitznewton\\Dojo\\": "src/"
         }
     },
     "require": {

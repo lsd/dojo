@@ -1,6 +1,6 @@
 <?php
 
-namespace Yitznewton\Dojo\Tests;
+namespace Yitznewton\Dojo;
 
 class LeapYearTest extends \PHPUnit_Framework_TestCase
 {
