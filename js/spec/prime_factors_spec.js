@@ -1,15 +1,10 @@
 var primeFactors = function(n) {
   var factors = [];
 
-  for (var possibleFactor = 2; possibleFactor < n; possibleFactor++) {
-    while (n % possibleFactor === 0) {
+  for (var possibleFactor = 2; n > 1; possibleFactor++) {
+    for (; n % possibleFactor === 0; n /= possibleFactor) {
       factors.push(possibleFactor);
-      n /= possibleFactor;
     }
-  }
-
-  if (n > 1) {
-    factors.push(n);
   }
 
   return factors;
