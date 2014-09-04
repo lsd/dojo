@@ -1,8 +1,9 @@
 {
-  "name": "imagineeasy-dojo",
+  "name": "yitznewton-dojo",
   "version": "0.0.1",
   "dependencies": {
-    "jasmine-node": "~1.14.5"
+    "jasmine-node": "~1.14.5",
+    "eslint": "~0.7.4"
   },
   "devDependencies": {},
   "author": "yitznewton@hotmail.com",

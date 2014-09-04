@@ -1,4 +1,5 @@
 ci: composer-validate phpmd phpcs php-cs-fixer phpunit
+test: phpunit
 
 composer-validate:
 	composer validate
@@ -14,3 +15,6 @@ php-cs-fixer:
 
 phpunit:
 	./vendor/bin/phpunit
+
+install:
+	composer install
