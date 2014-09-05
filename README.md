@@ -2,8 +2,9 @@
 
 ## Prereqs
 
-* Composer (https://getcomposer.org/download/)
-* npm (`brew install npm` on OS X :trollface: )
+* for PHP: Composer (https://getcomposer.org/download/)
+* for JS: npm (`brew install npm` on OS X :trollface: )
+* for Ruby: bundler
 
 ## Installation
 
@@ -14,13 +15,13 @@ $ make install
 ## Running tests
 
 ```bash
-$ cd php # or cd js
+$ cd php # or js or ruby
 $ make test
 ```
 
 ## Running all checks
 
 ```bash
-$ cd php # or cd js
+$ cd php # or js or ruby
 $ make ci
 ```
