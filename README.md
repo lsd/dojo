@@ -4,7 +4,7 @@
 
 * for PHP: Composer (https://getcomposer.org/download/)
 * for JS: npm (`brew install npm` on OS X :trollface: )
-* for Ruby: bundler
+* for Ruby: Bundler (https://www.railstutorial.org/book/beginning#sec-install_ruby)
 
 ## Installation
 
