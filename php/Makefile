@@ -2,7 +2,7 @@ ci: composer-validate phpmd phpcs php-cs-fixer phpunit
 test: phpunit
 
 composer-validate:
-	composer validate
+	./composer.phar validate
 
 phpmd:
 	./vendor/bin/phpmd ./src text codesize,controversial,design,naming,unusedcode
@@ -17,4 +17,4 @@ phpunit:
 	./vendor/bin/phpunit
 
 install:
-	composer install
+	./composer.phar install
