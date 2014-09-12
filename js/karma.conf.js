@@ -29,7 +29,7 @@ module.exports = function(config) {
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
     //  'src/app/**/!(*Mock|*_spec).js': ['coverage'],
-      'src/form/**/!(*Mock|*_spec).js': ['coverage']
+    //  'src/form/**/!(*Mock|*_spec).js': ['coverage']
     },
 
     // test results reporter to use
@@ -37,7 +37,6 @@ module.exports = function(config) {
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     reporters: [
       'progress',
-      'coverage'
     ],
 
     // optionally, configure the reporter
