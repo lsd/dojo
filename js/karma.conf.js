@@ -1,42 +1,41 @@
-// Karma configuration
-// Generated on Mon Jul 28 2014 14:09:22 GMT-0400 (EDT)
-
 module.exports = function(config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
 
-    // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['mocha'],
 
-
     // list of files / patterns to load in the browser
+    // included: Description of :included. Should the files be included
+    // in the browser using <script> tag? Use false if you wanna load them
+    // manually, eg. using Require.js.
     files: [
-      {pattern: 'lib/index.js', included: false},
-      {pattern: 'lib/**/*.js', included: false},
-      {pattern: 'lib/cell.js', included: false},
+      {pattern: 'lib/index.js', included: true},
+      {pattern: 'lib/**/*.js', included: true},
+      {pattern: 'lib/cell.js', included: true},
     ],
 
-
     // list of files to exclude
+    // Important. Use Mocha's --verbose or --debug to see exactly what files are
+    // loaded for testing. I.e., you don't want to include third party build-related
+    // files used only internally but that package and should not interhere here.
     exclude: [
     ],
 
-
-    // preprocess matching files before serving them to the browser
-    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
+    // preprocessor matching files before serving to browser
+    // Others include coffee, https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-    //  'src/app/**/!(*Mock|*_spec).js': ['coverage'],
+      'lib/**/!(*[M]ock|*_spec)\.js': ['coverage'],
     //  'src/form/**/!(*Mock|*_spec).js': ['coverage']
     },
 
-    // test results reporter to use
-    // possible values: 'dots', 'progress'
+    // repoter values: dots, progress, spec,
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     reporters: [
       'progress',
+      ' spec',
     ],
 
     // optionally, configure the reporter
