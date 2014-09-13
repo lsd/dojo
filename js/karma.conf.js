@@ -11,10 +11,13 @@ module.exports = function(config) {
     // included: Description of :included. Should the files be included
     // in the browser using <script> tag? Use false if you wanna load them
     // manually, eg. using Require.js.
+    files = ["lib/" + component + "/**/" + "\.js"].forEach(function() {
+    });
     files: [
-      {pattern: 'lib/index.js', included: true},
-      {pattern: 'lib/**/*.js', included: true},
-      {pattern: 'lib/cell.js', included: true},
+      {pattern: 'lib/cell/**/*.js', included: true},
+      {pattern: 'spec/cell/**/*([._][Ss]pec).js', included: true},
+      // {pattern: 'lib/index.js', included: true},
+      // {pattern: 'lib/**/*.js', included: true},
     ],
 
     // list of files to exclude
